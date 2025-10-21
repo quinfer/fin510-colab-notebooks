@@ -1,0 +1,301 @@
+---
+title: "Python Environment Setup"
+subtitle: "Complete installlation guide for FIN510"
+---
+
+# Python Environment Setup for FIN510
+
+This guide will help you set up a professional Python environment for financial data science.
+
+## Required Software
+
+### 1. Anaconda Distribution (Recommended)
+
+**Download**: [https://www.anaconda.com/download](https://www.anaconda.com/download)
+
+Anaconda includes Python, Jupyter Lab, and most scientific libraries pre-installled.
+
+#### installlation Steps:
+1. Download Anaconda for your operating system
+2. Run the installler with default settings
+3. Verify installlation by opening Anaconda Navigator
+
+### 2. Alternative: Miniconda + Manual Setup
+
+For advanced users who prefer minimal installlation:
+
+```bash
+# install miniconda
+# Then install required packages
+conda install pandas numpy matplotlib seaborn plotly
+conda install scikit-learn tensorflow jupyter
+pip install yfinance pandas-datareader quantlib-python
+```
+
+## Required Python Libraries
+
+### Core Data Science Stack
+```python
+# Data manipulation and analysis
+import pandas as pd
+import numpy as np
+
+# Visualization
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+
+# Statistical analysis
+import scipy.stats as stats
+import statsmodels.api as sm
+```
+
+### Financial Libraries
+```python
+# Financial data acquisition
+import yfinance as yf
+import pandas_datareader as pdr
+
+# Quantitative finance
+import quantlib as ql
+
+# Time series and econometrics
+from arch import arch_model
+```
+
+### Machine Learning & AI
+```python
+# Traditional ML
+from sklearn import *
+import xgboost as xgb
+import lightgbm as lgb
+
+# Deep learning
+import tensorflow as tf
+from tensorflow.keras import layers
+
+# Natural Language Processing
+from textblob import TextBlob
+from transformers import pipeline
+```
+
+## installlation Commands
+
+### Option 1: Conda installlation (Recommended)
+```bash
+# Create new environment for FIN510
+conda create -n fin510 python=3.9
+conda activate fin510
+
+# install core packages
+conda install pandas numpy matplotlib seaborn plotly
+conda install scikit-learn jupyter jupyterlab
+conda install -c conda-forge yfinance
+
+# install additional packages via pip
+pip install arch pandas-datareader quantlib-python
+pip install xgboost lightgbm tensorflow
+pip install textblob transformers vaderSentiment
+```
+
+### Option 2: Pip installlation
+```bash
+# install all packages via pip
+pip install pandas numpy matplotlib seaborn plotly
+pip install scikit-learn jupyter jupyterlab
+pip install yfinance pandas-datareader quantlib-python
+pip install arch statsmodels scipy
+pip install xgboost lightgbm tensorflow
+pip install textblob transformers vaderSentiment
+```
+
+## Verification Script
+
+Run this script to verify your installlation:
+
+```python
+# FIN510 Environment Verification Script
+import sys
+import importlib
+
+required_packages = [
+    'pandas', 'numpy', 'matplotlib', 'seaborn', 'plotly',
+    'sklearn', 'yfinance', 'arch', 'statsmodels', 
+    'tensorflow', 'xgboost', 'textblob'
+]
+
+print("FIN510 Python Environment Check")
+print("=" * 40)
+print(f"Python Version: {sys.version}")
+print()
+
+missing_packages = []
+
+for package in required_packages:
+    try:
+        module = importlib.import_module(package)
+        version = getattr(module, '__version__', 'Unknown')
+        print(f"✓ {package}: {version}")
+    except ImportError:
+        print(f"✗ {package}: NOT installled")
+        missing_packages.append(package)
+
+if missing_packages:
+    print(f"\n❌ Missing packages: {', '.join(missing_packages)}")
+    print("Please install missing packages before proceeding.")
+else:
+    print("\n✅ All required packages installled successfully!")
+    print("You're ready for FIN510!")
+```
+
+## Development Environment Setup
+
+### Jupyter Lab Configuration
+
+```python
+# Recommended Jupyter Lab extensions
+# Run these commands in your terminal:
+
+# install extensions
+pip install jupyterlab-git
+pip install jupyterlab_code_formatter
+pip install jupyterlab-variableInspector
+
+# Configure Jupyter for finance
+jupyter lab --generate-config
+
+# Add to ~/.jupyter/jupyter_lab_config.py:
+c.ServerApp.open_browser = True
+c.ServerApp.port = 8888
+c.NotebookApp.notebook_dir = '/path/to/your/fin510/projects'
+```
+
+### VS Code Setup (Optional but Recommended)
+
+**Extensions to install:**
+- Python
+- Jupyter
+- Python Docstring Generator
+- GitLens
+- Pylance
+
+## API Setup
+
+### Financial Data APIs
+
+#### 1. Yahoo Finance (Free)
+```python
+import yfinance as yf
+
+# Test Yahoo Finance connection
+ticker = yf.Ticker("AAPL")
+data = ticker.history(period="1mo")
+print("Yahoo Finance connection successful!")
+```
+
+#### 2. Alpha Vantage (Free tier available)
+1. Sign up at [https://www.alphavantage.co/](https://www.alphavantage.co/)
+2. Get your free API key
+3. Store in environment variable:
+
+```python
+import os
+os.environ['ALPHA_VANTAGE_API_KEY'] = 'your_api_key_here'
+
+# Test connection
+import pandas_datareader as pdr
+data = pdr.get_data_alphavantage('AAPL', api_key=os.environ['ALPHA_VANTAGE_API_KEY'])
+```
+
+#### 3. Quandl (Optional)
+```python
+# install and setup Quandl
+pip install quandl
+import quandl
+quandl.ApiConfig.api_key = "your_quandl_api_key"
+```
+
+## Troubleshooting
+
+### Common Issues
+
+#### ImportError: No module named 'package_name'
+```bash
+# Solution: install the missing package
+pip install package_name
+
+# Or if using conda:
+conda install package_name
+```
+
+#### SSL Certificate Errors (yfinance)
+```python
+# Add this to your Python scripts
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+```
+
+#### Jupyter Kernel Issues
+```bash
+# Register your conda environment as Jupyter kernel
+conda activate fin510
+python -m ipykernel install --user --name=fin510
+```
+
+#### Memory Issues with Large Datasets
+```python
+# optimise pandas memory usage
+import pandas as pd
+pd.set_option('display.max_columns', None)
+pd.set_option('mode.chained_assignment', None)
+
+# Use chunking for large files
+for chunk in pd.read_csv('large_file.csv', chunksize=10000):
+    process(chunk)
+```
+
+## Performance optimisation
+
+### Recommended Settings
+```python
+# Add to your Python startup file
+import warnings
+warnings.filterwarnings('ignore')
+
+# Configure pandas for better performance
+import pandas as pd
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+pd.set_option('display.max_colwidth', 50)
+
+# Configure matplotlib for better plots
+import matplotlib.pyplot as plt
+plt.style.use('seaborn-v0_8')
+plt.rcParams['figure.figsize'] = (12, 8)
+plt.rcParams['font.size'] = 10
+
+# Set random seeds for reproducibility
+import numpy as np
+np.random.seed(42)
+```
+
+## Getting Help
+
+### Course Support
+- **Discussion Board**: Post technical questions
+- **Office Hours**: By appointment
+- **Email**: b.quinn1@ulster.ac.uk
+
+### Online Resources
+- **Python Documentation**: [https://docs.python.org/](https://docs.python.org/)
+- **Pandas Documentation**: [https://pandas.pydata.org/docs/](https://pandas.pydata.org/docs/)
+- **Stack Overflow**: Tag questions with `python` and `finance`
+- **GitHub Issues**: Course repository for bug reports
+
+### Emergency Contacts
+- **IT Support**: 028 9536 7188
+- **Blackboard Help**: blackboardhelpdesk@ulster.ac.uk
+
+---
+
+*This setup guide will be updated throughout the semester. Check back for the latest versions and troubleshooting tips.*
