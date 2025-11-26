@@ -1,0 +1,9 @@
+symbol,company,category,filename,rows,start_date,end_date
+JPM,JPMorgan Chase,Traditional Bank,jpm_data.csv,978,2021-01-01,2024-10-01
+BAC,Bank of America,Traditional Bank,bac_data.csv,978,2021-01-01,2024-10-01
+WFC,Wells Fargo,Traditional Bank,wfc_data.csv,978,2021-01-01,2024-10-01
+C,Citigroup,Traditional Bank,c_data.csv,978,2021-01-01,2024-10-01
+PYPL,PayPal Holdings,FinTech,pypl_data.csv,978,2021-01-01,2024-10-01
+SQ,Block (Square),FinTech,sq_data.csv,978,2021-01-01,2024-10-01
+SOFI,SoFi Technologies,FinTech,sofi_data.csv,978,2021-01-01,2024-10-01
+AFRM,Affirm Holdings,FinTech,afrm_data.csv,978,2021-01-01,2024-10-01

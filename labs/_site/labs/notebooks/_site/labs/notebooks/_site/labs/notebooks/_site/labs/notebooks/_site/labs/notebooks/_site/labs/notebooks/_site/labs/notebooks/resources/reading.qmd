@@ -1,0 +1,87 @@
+---
+title: "Reading List"
+subtitle: "Core texts and anchor papers by theme"
+bibliography: reading.bib
+---
+
+# Core Texts
+
+- [@hilpisch2019]  
+  Module: FIN510, FIN720 — Level: Foundation/Advanced
+- [@liaw2021]  
+  Module: FIN720 — Level: Foundation
+
+Note: Additional industry books listed in the approved handbooks are useful for context. The lists below prioritise peer‑reviewed academic articles to anchor analytical learning.
+
+# Theme Anchors (Articles)
+
+Each theme lists 1–2 high‑quality, widely cited papers. Tags indicate primary module and suggested level.
+
+## FinTech Landscape
+
+- [@philippon2016fintech]  
+  Module: FIN510 (Foundation), FIN720 (Foundation)
+- [@vives2019banking]  
+  Module: FIN510 (Foundation), FIN720 (Foundation)
+
+## Modern Investment & Financial Inclusion
+
+- [@suri2016mobile]  
+  Module: FIN510 (Foundation), FIN720 (Foundation)
+- [@mollick2014crowdfunding]  
+  Module: FIN510 (Foundation), FIN720 (Foundation)
+
+## Crypto Finance
+
+- [@bohme2015bitcoin]  
+  Module: FIN510 (Foundation), FIN720 (Foundation)
+- [@howell2020ico]  
+  Module: FIN510 (Foundation), FIN720 (Foundation)
+
+## Data Science for Finance
+
+- [@gu2020ml]  
+  Module: FIN510 (Foundation), FIN720 (Foundation)
+- [@tetlock2007sentiment]  
+  Module: FIN510 (Foundation), FIN720 (Foundation)
+
+## Machine Learning (Advanced, FIN720)
+
+- [@chen2021deeplearning]  
+  Module: FIN720 (Advanced)
+
+- [@gabaix2025assetembeddings]  
+  Module: FIN720 (Advanced)
+
+## AI & NLP in Finance
+
+- [@cao2023ainlp]  
+  Module: FIN510 (Advanced), FIN720 (Advanced)
+
+## Payments
+
+- [@ausubel1991credit]  
+  Module: FIN720 (Foundation)
+- [@rysman2009twosided]  
+  Module: FIN720 (Foundation)
+
+## Open Finance (Open Banking, Blockchain, Smart Contracts)
+
+- [@catalini2020blockchain]  
+  Module: FIN720 (Foundation)
+
+## Market Demand (Emerging Markets, Inclusion, Policy)
+
+- [@buchak2018shadow]  
+  Module: FIN720 (Foundation)
+- [@suri2016mobile]  
+  Module: FIN510 (Foundation), FIN720 (Foundation)
+
+---
+
+# Usage Notes
+
+- The readings above are deliberately selective and rigorous; they anchor each theme for both modules.  
+- For FIN510, use them as guided readings (focus on concepts and evidence).  
+- For FIN720, expect critical appraisal and application.  
+- Coding work should link to methods in the papers (e.g., ML baselines, text sentiment, event study design).
