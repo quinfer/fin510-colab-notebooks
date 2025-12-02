@@ -1,0 +1,6 @@
+symbol,filename,rows,start_date,end_date,columns
+AAPL,aapl_data.csv,457,2023-01-02,2024-10-01,"['Open', 'High', 'Low', 'Close', 'Volume']"
+GOOGL,googl_data.csv,457,2023-01-02,2024-10-01,"['Open', 'High', 'Low', 'Close', 'Volume']"
+MSFT,msft_data.csv,457,2023-01-02,2024-10-01,"['Open', 'High', 'Low', 'Close', 'Volume']"
+JPM,jpm_data.csv,457,2023-01-02,2024-10-01,"['Open', 'High', 'Low', 'Close', 'Volume']"
+PYPL,pypl_data.csv,457,2023-01-02,2024-10-01,"['Open', 'High', 'Low', 'Close', 'Volume']"

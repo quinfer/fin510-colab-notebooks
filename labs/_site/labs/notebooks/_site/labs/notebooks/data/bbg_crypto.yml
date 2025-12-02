@@ -1,0 +1,27 @@
+meta:
+  output_root: outputs/bbg
+  requests_per_minute: 8
+  sleep_between_batches_sec: 3
+  max_tickers_per_request: 6
+  max_fields_per_request: 6
+
+historical:
+  start: 2018-01-01
+  periodicity: DAILY
+  calendar: ACTUAL
+  groups:
+    crypto_usd_daily:
+      tickers:
+        - "BTCUSD Curncy"
+        - "ETHUSD Curncy"
+      fields: ["PX_OPEN","PX_HIGH","PX_LOW","PX_LAST"]
+
+reference:
+  groups:
+    crypto_meta:
+      tickers:
+        - "BTCUSD Curncy"
+        - "ETHUSD Curncy"
+      fields: ["SECURITY_DES","SECURITY_TYP"]
+
+
