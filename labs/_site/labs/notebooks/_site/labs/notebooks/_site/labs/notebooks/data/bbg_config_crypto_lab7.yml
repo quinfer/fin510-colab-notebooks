@@ -1,0 +1,34 @@
+# Bloomberg configuration for Lab 7 Cryptocurrency data
+# Use at Terminal: python scripts/download_crypto_bloomberg.py --config data/bbg_config_crypto_lab7.yml
+
+historical:
+  start: "2022-11-01"  # 2 years of data for lab
+  end: "2024-11-01"
+  periodicity: DAILY
+  
+  groups:
+    cryptocurrencies:
+      tickers:
+        - "XBT Curncy"      # Bitcoin (standard Bloomberg crypto ticker)
+        - "ETH Curncy"      # Ethereum
+        - "BNB Curncy"      # Binance Coin
+      fields:
+        - PX_LAST           # Close price
+        - PX_OPEN           # Open price
+        - PX_HIGH           # High price
+        - PX_LOW            # Low price
+        - PX_VOLUME         # Volume
+        - VWAP_PRICE        # Volume-weighted average price (if available)
+    
+    traditional_assets:
+      tickers:
+        - "SPY US Equity"   # S&P 500 ETF (for comparison)
+        - "GLD US Equity"   # Gold ETF
+        - "TLT US Equity"   # 20+ Year Treasury ETF
+      fields:
+        - PX_LAST
+        - PX_OPEN
+        - PX_HIGH
+        - PX_LOW
+        - PX_VOLUME
+
