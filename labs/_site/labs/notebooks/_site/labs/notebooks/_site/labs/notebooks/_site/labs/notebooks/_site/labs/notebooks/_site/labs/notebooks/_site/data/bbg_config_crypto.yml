@@ -1,0 +1,87 @@
+###############################################################################
+# Bloomberg Configuration for Cryptocurrency Data (Week 7)
+#
+# Download historical crypto data for slides and analysis
+###############################################################################
+
+meta:
+  output_root: data/chapter07/bloomberg
+  requests_per_minute: 10
+  sleep_between_batches_sec: 2
+  max_tickers_per_request: 10
+  max_fields_per_request: 10
+
+historical:
+  start: 2020-01-01
+  end: 2024-11-09
+  periodicity: DAILY
+  
+  groups:
+    # Major cryptocurrencies
+    cryptocurrencies:
+      description: Bitcoin, Ethereum, major altcoins
+      tickers:
+        - XBTUSD Curncy    # Bitcoin
+        - ETHUSD Curncy    # Ethereum
+        - BNBUSD Curncy    # Binance Coin
+        - ADAUSD Curncy    # Cardano
+        - SOLUSD Curncy    # Solana
+      fields:
+        - PX_LAST          # Last price
+        - PX_OPEN          # Open price
+        - PX_HIGH          # Daily high
+        - PX_LOW           # Daily low
+        - PX_VOLUME        # Trading volume
+        - PX_BID           # Bid price
+        - PX_ASK           # Ask price
+    
+    # Traditional assets for comparison
+    traditional_assets:
+      description: Equities, gold, bonds for correlation analysis
+      tickers:
+        - SPX Index        # S&P 500
+        - VIX Index        # Volatility Index
+        - XAUUSD Curncy    # Gold (USD/oz)
+        - USGG10YR Index   # 10-Year Treasury Yield
+        - TLT US Equity    # iShares 20+ Year Treasury Bond ETF
+      fields:
+        - PX_LAST
+        - PX_OPEN
+        - PX_HIGH
+        - PX_LOW
+        - PX_VOLUME
+
+reference:
+  groups:
+    crypto_metadata:
+      description: Cryptocurrency reference data
+      tickers:
+        - XBTUSD Curncy
+        - ETHUSD Curncy
+      fields:
+        - NAME                    # Security name
+        - CRNCY                   # Currency
+        - MARKET_STATUS           # Trading status
+        - LAST_UPDATE_DT          # Last update date
+
+###############################################################################
+# Bloomberg Crypto Ticker Guide:
+#
+# Major Cryptocurrencies:
+# - XBTUSD Curncy  (Bitcoin)
+# - ETHUSD Curncy  (Ethereum)
+# - BNBUSD Curncy  (Binance Coin)
+# - ADAUSD Curncy  (Cardano)
+# - SOLUSD Curncy  (Solana)
+# - DOTUSD Curncy  (Polkadot)
+# - MATICUSD Curncy (Polygon)
+# - AVAXUSD Curncy (Avalanche)
+#
+# Stablecoins:
+# - USDTUSD Curncy (Tether)
+# - USDCUSD Curncy (USD Coin)
+#
+# Note: Bloomberg crypto coverage may vary. Check ticker availability
+# in Terminal before adding to config.
+###############################################################################
+

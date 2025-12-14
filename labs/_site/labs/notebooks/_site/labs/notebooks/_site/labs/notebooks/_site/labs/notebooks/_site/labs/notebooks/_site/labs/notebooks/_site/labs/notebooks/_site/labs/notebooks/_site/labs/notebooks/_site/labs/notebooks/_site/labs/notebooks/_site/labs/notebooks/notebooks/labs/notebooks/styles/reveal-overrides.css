@@ -1,0 +1,8 @@
+.reveal .slide-logo {
+  /* Double the default 2.2rem max-height */
+  max-height: 4.4rem !important;
+  width: auto !important;
+}
+
+/* Optional: nudge footer up slightly if desired */
+/* .reveal .footer { bottom: 22px; } */

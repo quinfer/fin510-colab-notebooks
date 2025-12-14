@@ -36,3 +36,21 @@
 .reveal .task-list-item input[type="checkbox"] {
   margin-right: 0.5em;
 }
+
+/* Optional: extra-small text for very dense slides */
+.reveal .slides section.small {
+  font-size: 0.8em !important;
+}
+
+/* Slightly reduce slide title size to avoid wrapping */
+.reveal .slides section > h2 {
+  font-size: 1.7em;
+  line-height: 1.15;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Optional: extra-compact titles for particularly long headings */
+.reveal .slides section.compact-title > h2 {
+  font-size: 1.4em;
+}

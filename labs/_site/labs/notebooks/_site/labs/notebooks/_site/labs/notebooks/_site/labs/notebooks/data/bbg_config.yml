@@ -1,110 +1,36 @@
-###############################################################################
-# Bloomberg Desktop API pull configuration
-#
-# Notes
-# - Run only on a Bloomberg Terminal machine (Desktop API), while logged in.
-# - Respect your university license and fair-use: keep universes small,
-#   batch requests modestly, and cache results for class use.
-# - Field mnemonics can vary; verify with FLDS <GO> at the terminal.
-###############################################################################
-
 meta:
   output_root: outputs/bbg
-  # Conservative throttles for university terminals (adjust if permitted)
-  requests_per_minute: 10     # global soft limit
-  sleep_between_batches_sec: 2
-  max_tickers_per_request: 40
-  max_fields_per_request: 20
+  requests_per_minute: 8
+  sleep_between_batches_sec: 3
+  max_tickers_per_request: 6
+  max_fields_per_request: 6
 
 historical:
-  # Shared parameters for BDH-like requests
-  start: 2020-01-01
-  end:   2025-01-01
-  periodicity: DAILY        # DAILY | WEEKLY | MONTHLY
-  calendar: ACTUAL          # ACTUAL | TRADING
-  adjustments: PX_LAST      # leave as-is; fields determine actual content
-
+  start: 2018-01-01
+  end: 2025-01-01
+  periodicity: DAILY
+  calendar: ACTUAL
   groups:
-    equities_core:
-      description: Core equities used across labs (keep small)
-      tickers: ["AAPL US Equity", "MSFT US Equity", "SPY US Equity"]
-      fields: ["PX_LAST", "PX_OPEN", "PX_HIGH", "PX_LOW", "PX_VOLUME"]
-    
-    chapter01:
-      description: Chapter 01 FinTech vs Traditional Banks comparison
-      tickers: [
-        "JPM US Equity",    # JPMorgan Chase
-        "BAC US Equity",    # Bank of America  
-        "WFC US Equity",    # Wells Fargo
-        "C US Equity",      # Citigroup
-        "PYPL US Equity",   # PayPal
-        "SQ US Equity",     # Block (Square)
-        "SOFI US Equity",   # SoFi Technologies
-        "AFRM US Equity"    # Affirm Holdings
-      ]
-      fields: ["PX_LAST", "PX_OPEN", "PX_HIGH", "PX_LOW", "PX_VOLUME"]
-    
-    chapter02:
-      description: Chapter 02 data pipeline examples
-      tickers: ["AAPL US Equity", "GOOGL US Equity", "MSFT US Equity", "JPM US Equity", "PYPL US Equity"]
-      fields: ["PX_LAST", "PX_OPEN", "PX_HIGH", "PX_LOW", "PX_VOLUME"]
-    
-    chapter04:
-      description: Chapter 04 Robo-Advisor portfolio optimization (liquid ETFs)
-      tickers: [
-        "SPY US Equity",    # S&P 500 ETF
-        "IWM US Equity",    # Russell 2000 Small Cap
-        "EFA US Equity",    # MSCI EAFE International
-        "BND US Equity",    # Total Bond Market
-        "VNQ US Equity"     # Real Estate ETF
-      ]
-      fields: ["PX_LAST", "PX_OPEN", "PX_HIGH", "PX_LOW", "PX_VOLUME"]
-
-    benchmarks:
-      description: Indices / risk proxies
-      tickers: ["SPX Index", "VIX Index"]
+    core_equities:
+      tickers:
+        - "SPY US Equity"
+        - "AAPL US Equity"
+        - "MSFT US Equity"
+        - "GOOGL US Equity"
+        - "NVDA US Equity"
+      fields: ["PX_OPEN","PX_HIGH","PX_LOW","PX_LAST","PX_VOLUME"]
+    risk_gauges:
+      tickers:
+        - "VIX Index"
+        - "USGG10YR Index"
+        - "MOVE Index"
       fields: ["PX_LAST"]
-
-    rates:
-      description: Treasury benchmark yields
-      tickers: ["USGG2YR Index", "USGG10YR Index"]
-      fields: ["PX_LAST"]   # verify: Yields often exposed via PX_LAST on these indices
-
-    fx:
-      description: FX majors
-      tickers: ["EURUSD Curncy", "GBPUSD Curncy"]
-      fields: ["PX_LAST"]
-
-    etfs:
-      description: A couple of broad ETFs for labs
-      tickers: ["SPY US Equity", "QQQ US Equity"]
-      fields: ["PX_LAST", "PX_VOLUME"]
 
 reference:
-  # BDP-like one-shot reference pulls
   groups:
-    equities_ref:
-      description: Basic descriptors for equities
-      tickers: ["AAPL US Equity", "MSFT US Equity", "SPY US Equity"]
-      fields: [
-        "NAME",                # Company / instrument name
-        "CRNCY",               # Pricing currency
-        "COUNTRY_FULL_NAME",   # Country
-        "GICS_SECTOR_NAME",    # Verify availability for all instruments
-        "BETA_ADJ_OVERRIDABLE" # Adjusted beta (verify permissions)
-      ]
-
-    etf_ref:
-      description: ETF metadata (verify availability per vendor)
-      tickers: ["SPY US Equity", "QQQ US Equity"]
-      fields: [
-        "FUND_NET_ASSETS",     # AUM (verify)
-        "FUND_EXPENSE_RATIO",  # Expense ratio (verify)
-        "FUND_BENCHMARK"       # Benchmark (verify)
-      ]
-
-    index_ref:
-      description: Index descriptors
-      tickers: ["SPX Index", "VIX Index"]
-      fields: ["NAME", "CRNCY"]
-
+    company_meta:
+      tickers:
+        - "AAPL US Equity"
+        - "MSFT US Equity"
+        - "GOOGL US Equity"
+      fields: ["SECURITY_DES","GICS_SECTOR_NAME","GICS_INDUSTRY_NAME"]
