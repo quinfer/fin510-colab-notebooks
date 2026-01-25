@@ -1,6 +1,0 @@
-symbol,description,filename,rows,start_date,end_date
-SPY,SPDR S&P 500 ETF (US Large Cap),spy_data.csv,717,2022-01-03,2024-10-01
-IWM,iShares Russell 2000 (US Small Cap),iwm_data.csv,717,2022-01-03,2024-10-01
-EFA,iShares MSCI EAFE (International Developed),efa_data.csv,717,2022-01-03,2024-10-01
-BND,Vanguard Total Bond Market (Bonds),bnd_data.csv,717,2022-01-03,2024-10-01
-VNQ,Vanguard Real Estate ETF (REITs),vnq_data.csv,717,2022-01-03,2024-10-01
