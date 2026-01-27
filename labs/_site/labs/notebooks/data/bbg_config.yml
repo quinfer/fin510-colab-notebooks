@@ -1,0 +1,36 @@
+meta:
+  output_root: outputs/bbg
+  requests_per_minute: 8
+  sleep_between_batches_sec: 3
+  max_tickers_per_request: 6
+  max_fields_per_request: 6
+
+historical:
+  start: 2018-01-01
+  end: 2025-01-01
+  periodicity: DAILY
+  calendar: ACTUAL
+  groups:
+    core_equities:
+      tickers:
+        - "SPY US Equity"
+        - "AAPL US Equity"
+        - "MSFT US Equity"
+        - "GOOGL US Equity"
+        - "NVDA US Equity"
+      fields: ["PX_OPEN","PX_HIGH","PX_LOW","PX_LAST","PX_VOLUME"]
+    risk_gauges:
+      tickers:
+        - "VIX Index"
+        - "USGG10YR Index"
+        - "MOVE Index"
+      fields: ["PX_LAST"]
+
+reference:
+  groups:
+    company_meta:
+      tickers:
+        - "AAPL US Equity"
+        - "MSFT US Equity"
+        - "GOOGL US Equity"
+      fields: ["SECURITY_DES","GICS_SECTOR_NAME","GICS_INDUSTRY_NAME"]
