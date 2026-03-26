@@ -1,0 +1,101 @@
+security,TICKER,LONG_COMP_NAME,GICS_SECTOR_NAME,GICS_INDUSTRY_NAME,CUR_MKT_CAP,CRNCY
+AAF LN Equity,AAF,Airtel Africa PLC,Communication Services,Wireless Telecommunication Ser,13156093532.789999,GBp
+AAL LN Equity,AAL,Anglo American PLC,Materials,Metals & Mining,35977655306.88,GBp
+ABF LN Equity,ABF,Associated British Foods PLC,Consumer Staples,Food Products,12805829871.449999,GBp
+ADM LN Equity,ADM,Admiral Group PLC,Financials,Insurance,9666975574.56,GBp
+ALW LN Equity,ALW,Alliance Witan PLC,,,4549831542.96875,GBp
+ANTO LN Equity,ANTO,Antofagasta PLC,Materials,Metals & Mining,33331814857.950005,GBp
+AUTO LN Equity,AUTO,Autotrader Group PLC,Communication Services,Interactive Media & Services,3784487745.83,GBp
+AV/ LN Equity,AV/,Aviva PLC,Financials,Insurance,18867276435.229996,GBp
+AZN LN Equity,AZN,AstraZeneca PLC,Health Care,Pharmaceuticals,214190383849.19998,GBp
+BA/ LN Equity,BA/,BAE Systems PLC,Industrials,Aerospace & Defense,63755630732.03999,GBp
+BAB LN Equity,BAB,Babcock International Group PLC,Industrials,Aerospace & Defense,6177749731.200001,GBp
+BARC LN Equity,BARC,Barclays PLC,Financials,Banks,52840011828.68949,GBp
+BATS LN Equity,BATS,British American Tobacco PLC,Consumer Staples,Tobacco,94129988665.44,GBp
+BBOX LN Equity,BBOX,Tritax Big Box REIT PLC,Real Estate,Industrial REITs,3891438953.4459996,GBp
+BEZ LN Equity,BEZ,Beazley PLC,Financials,Insurance,7589795409.96,GBp
+BGEO LN Equity,BGEO,Lion Finance Group PLC,Financials,Banks,4080439457.6,GBp
+BKG LN Equity,BKG,Berkeley Group Holdings PLC,Consumer Discretionary,Household Durables,3221278929.9200006,GBp
+BLND LN Equity,BLND,British Land Co PLC/The,Real Estate,Diversified REITs,3481635671.3759995,GBp
+BNZL LN Equity,BNZL,Bunzl PLC,Industrials,Trading Companies & Distributo,7067809152.200001,GBp
+BP/ LN Equity,BP/,BP PLC,Energy,"Oil, Gas & Consumable Fuels",87530119207.475,GBp
+BRBY LN Equity,BRBY,Burberry Group PLC,Consumer Discretionary,"Textiles, Apparel & Luxury Goo",3757987004.31,GBp
+BT/A LN Equity,BT/A,BT Group PLC,Communication Services,Diversified Telecommunication,20593143963.156,GBp
+BTRW LN Equity,BTRW,Barratt Redrow PLC,Consumer Discretionary,Household Durables,3729857010.66,GBp
+CCEP LN Equity,CCEP,Coca-Cola Europacific Partners PLC,Consumer Staples,Beverages,31276985560.199997,GBp
+CCH LN Equity,CCH,Coca-Cola HBC AG,Consumer Staples,Beverages,15377185120.500002,GBp
+CNA LN Equity,CNA,Centrica PLC,Utilities,Multi-Utilities,9113378804.713,GBp
+CPG LN Equity,CPG,Compass Group PLC,Consumer Discretionary,"Hotels, Restaurants & Leisure",36049129652.8,GBp
+CRDA LN Equity,CRDA,Croda International PLC,Materials,Chemicals,3830200174.0599995,GBp
+CTEC LN Equity,CTEC,Convatec Group PLC,Health Care,Health Care Equipment & Suppli,4367139432.786,GBp
+DCC LN Equity,DCC,DCC PLC,Energy,"Oil, Gas & Consumable Fuels",3917503228.4199996,GBp
+DGE LN Equity,DGE,Diageo PLC,Consumer Staples,Beverages,30335410925.25,GBp
+DPLM LN Equity,DPLM,Diploma PLC,Industrials,Trading Companies & Distributo,7877715392.7,GBp
+EDV LN Equity,EDV,Endeavour Mining PLC,Materials,Metals & Mining,9961111886.4,GBp
+ENT LN Equity,ENT,Entain PLC,Consumer Discretionary,"Hotels, Restaurants & Leisure",3737844361.7520003,GBp
+EXPN LN Equity,EXPN,Experian PLC,Industrials,Professional Services,23226619732.7,GBp
+FCIT LN Equity,FCIT,F&C Investment Trust PLC,,,5713573730.46875,GBp
+FRES LN Equity,FRES,Fresnillo PLC,Materials,Metals & Mining,23580594848.0,GBp
+GAW LN Equity,GAW,Games Workshop Group PLC,Consumer Discretionary,Leisure Products,5980945718.999999,GBp
+GLEN LN Equity,GLEN,Glencore PLC,Materials,Metals & Mining,61950941995.961,GBp
+GSK LN Equity,GSK,GSK PLC,Health Care,Pharmaceuticals,80311150317.51,GBp
+HLMA LN Equity,HLMA,Halma PLC,Information Technology,"Electronic Equipment, Instrume",14267071576.56,GBp
+HLN LN Equity,HLN,Haleon PLC,Health Care,Pharmaceuticals,32064682579.02,GBp
+HSBA LN Equity,HSBA,HSBC Holdings PLC,Financials,Banks,202908283729.668,GBp
+HSX LN Equity,HSX,Hiscox Ltd,Financials,Insurance,4886822025.28,GBp
+HWDN LN Equity,HWDN,Howden Joinery Group PLC,Industrials,Trading Companies & Distributo,4247615594.5600004,GBp
+IAG LN Equity,IAG,International Consolidated Airlines Group SA,Industrials,Passenger Airlines,16217376078.848,GBp
+ICG LN Equity,ICG,ICG PLC,Financials,Capital Markets,4285102695.65,GBp
+IGG LN Equity,IGG,IG Group Holdings PLC,Financials,Capital Markets,4791984299.77,GBp
+IHG LN Equity,IHG,InterContinental Hotels Group PLC,Consumer Discretionary,"Hotels, Restaurants & Leisure",19749342243.75,USD
+III LN Equity,III,3i Group PLC,Financials,Capital Markets,28179287565.0,GBp
+IMB LN Equity,IMB,Imperial Brands PLC,Consumer Staples,Tobacco,23684843544.620003,GBp
+IMI LN Equity,IMI,IMI PLC,Industrials,Machinery,6491766718.48,GBp
+INF LN Equity,INF,Informa PLC,Communication Services,Media,9713833957.828001,GBp
+ITRK LN Equity,ITRK,Intertek Group PLC,Industrials,Professional Services,5566173671.04,GBp
+JD/ LN Equity,JD/,JD Sports Fashion PLC,Consumer Discretionary,Specialty Retail,3298404813.382999,GBp
+KGF LN Equity,KGF,Kingfisher PLC,Consumer Discretionary,Specialty Retail,4896014486.352,GBp
+LAND LN Equity,LAND,Land Securities Group PLC,Real Estate,Diversified REITs,4026952339.7050004,GBp
+LGEN LN Equity,LGEN,Legal & General Group PLC,Financials,Insurance,13610316360.657001,GBp
+LLOY LN Equity,LLOY,Lloyds Banking Group PLC,Financials,Banks,54720618486.448006,GBp
+LMP LN Equity,LMP,LondonMetric Property PLC,Real Estate,Industrial REITs,4248064300.764,GBp
+LSEG LN Equity,LSEG,London Stock Exchange Group PLC,Financials,Capital Markets,42343269360.18,GBp
+MKS LN Equity,MKS,Marks & Spencer Group PLC,Consumer Staples,Consumer Staples Distribution,6900052212.360002,GBp
+MNDI LN Equity,MNDI,Mondi PLC,Materials,Paper & Forest Products,3672552249.6000013,GBp
+MNG LN Equity,MNG,M&G PLC,Financials,Financial Services,6587705681.02,GBp
+MRO LN Equity,MRO,Melrose Industries PLC,Industrials,Aerospace & Defense,6145877040.0,GBp
+MTLN LN Equity,MTLN,Metlen Energy & Metals PLC,Industrials,Industrial Conglomerates,4891385916.000001,EUR
+NG/ LN Equity,NG/,National Grid PLC,Utilities,Multi-Utilities,61246529097.600006,GBp
+NWG LN Equity,NWG,NatWest Group PLC,Financials,Banks,42619193427.121994,GBp
+NXT LN Equity,NXT,Next PLC,Consumer Discretionary,Broadline Retail,14571261787.6,GBp
+PCT LN Equity,PCT,Polar Capital Technology Trust PLC,,,5515747070.3125,GBp
+PRU LN Equity,PRU,Prudential PLC,Financials,Insurance,26923396081.64,GBp
+PSH LN Equity,PSH,Pershing Square Holdings Ltd/Fund,,,6949488769.53125,GBp
+PSN LN Equity,PSN,Persimmon PLC,Consumer Discretionary,Household Durables,3542655176.585,GBp
+PSON LN Equity,PSON,Pearson PLC,Consumer Discretionary,Diversified Consumer Services,5911189880.09,GBp
+REL LN Equity,REL,RELX PLC,Industrials,Professional Services,43658169604.2,GBp
+RIO LN Equity,RIO,Rio Tinto PLC,Materials,Metals & Mining,109838362343.06157,GBp
+RKT LN Equity,RKT,Reckitt Benckiser Group PLC,Consumer Staples,Household Products,32939074052.5,GBp
+RMV LN Equity,RMV,Rightmove PLC,Communication Services,Interactive Media & Services,3179250368.3710003,GBp
+RR/ LN Equity,RR/,Rolls-Royce Holdings PLC,Industrials,Aerospace & Defense,98031471649.12096,GBp
+RTO LN Equity,RTO,Rentokil Initial PLC,Industrials,Commercial Services & Supplies,11776397943.869999,GBp
+SBRY LN Equity,SBRY,J Sainsbury PLC,Consumer Staples,Consumer Staples Distribution,7465646945.321999,GBp
+SDLF LN Equity,SDLF,Standard Life PLC,Financials,Insurance,6616300343.075,GBp
+SDR LN Equity,SDR,Schroders PLC,Financials,Capital Markets,9237429179.33,GBp
+SGE LN Equity,SGE,Sage Group PLC/The,Information Technology,Software,7505129623.626,GBp
+SGRO LN Equity,SGRO,Segro PLC,Real Estate,Industrial REITs,9182112291.584,GBp
+SHEL LN Equity,SHEL,Shell PLC,Energy,"Oil, Gas & Consumable Fuels",195316255719.40002,GBp
+SMIN LN Equity,SMIN,Smiths Group PLC,Industrials,Industrial Conglomerates,7011970944.16,GBp
+SMT LN Equity,SMT,Scottish Mortgage Investment Trust PLC,,,12558032226.5625,GBp
+SN/ LN Equity,SN/,Smith & Nephew PLC,Health Care,Health Care Equipment & Suppli,10241166125.25,GBp
+SPX LN Equity,SPX,Spirax Group PLC,Industrials,Machinery,4913123494.4,GBp
+SSE LN Equity,SSE,SSE PLC,Utilities,Electric Utilities,30655726368.03,GBp
+STAN LN Equity,STAN,Standard Chartered PLC,Financials,Banks,35269951200.159996,GBp
+STJ LN Equity,STJ,St James's Place PLC,Financials,Capital Markets,6378720483.560002,GBp
+SVT LN Equity,SVT,Severn Trent PLC,Utilities,Water Utilities,8788764616.38,GBp
+TSCO LN Equity,TSCO,Tesco PLC,Consumer Staples,Consumer Staples Distribution,29276063119.66,GBp
+ULVR LN Equity,ULVR,Unilever PLC,Consumer Staples,Personal Care Products,98934489180.48,GBp
+UU/ LN Equity,UU/,United Utilities Group PLC,Utilities,Water Utilities,8540652435.45,GBp
+VOD LN Equity,VOD,Vodafone Group PLC,Communication Services,Wireless Telecommunication Ser,25435873569.837,GBp
+WEIR LN Equity,WEIR,Weir Group PLC/The,Industrials,Machinery,7206830563.52,GBp
+WTB LN Equity,WTB,Whitbread PLC,Consumer Discretionary,"Hotels, Restaurants & Leisure",3886571365.9500003,GBp
