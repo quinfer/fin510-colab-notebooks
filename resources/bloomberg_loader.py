@@ -118,3 +118,55 @@ def load_bloomberg(
             ]
 
     return merged
+
+
+_PRICE_DIVIDEND_NAME = "price_dividend_ratio.parquet"
+_PRICE_DIVIDEND_URL = (
+    "https://raw.githubusercontent.com/quinfer/fin510-colab-notebooks/"
+    "main/resources/price_dividend_ratio.parquet"
+)
+
+
+def load_price_dividend(
+    tickers: Sequence[str] | None = None,
+    *,
+    fields: Sequence[str] | None = None,
+    frequency: str | None = None,
+) -> pd.DataFrame:
+    """Load the S&P 500 price-dividend extract.
+
+    This is not part of load_bloomberg(). The main parquet has one PX_LAST
+    per ticker and date, and callers turn that column into a return. Dividend
+    yields and Treasury yields in this extract are levels, not prices.
+
+    Columns: date, ticker, security, field, value, value_type, frequency.
+    value_type is price, total_return, dividend_yield_percent, pe_ratio,
+    price_to_book, or yield_percent. Dividend yields and Treasury yields
+    are in percent (1.5 means 1.5%).
+
+    Looks for data/bloomberg_database/price_dividend_ratio.parquet, then
+    resources/ beside a Colab notebook. If neither file is present, reads
+    the copy published to fin510-colab-notebooks.
+    """
+    candidates = [
+        Path("data/bloomberg_database") / _PRICE_DIVIDEND_NAME,
+        Path("resources") / _PRICE_DIVIDEND_NAME,
+        Path("../resources") / _PRICE_DIVIDEND_NAME,
+    ]
+    frame = None
+    for path in candidates:
+        if path.exists():
+            frame = pd.read_parquet(path)
+            break
+    if frame is None:
+        frame = pd.read_parquet(_PRICE_DIVIDEND_URL)
+
+    if tickers is not None:
+        upper = {t.strip().upper() for t in tickers}
+        frame = frame[frame["ticker"].astype(str).str.upper().isin(upper)]
+    if fields is not None:
+        wanted = {f.strip() for f in fields}
+        frame = frame[frame["field"].isin(wanted)]
+    if frequency is not None:
+        frame = frame[frame["frequency"].eq(frequency)]
+    return frame.reset_index(drop=True)
