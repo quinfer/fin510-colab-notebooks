@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "statsmodels": "0.15.0",
+    "pyarrow": "26.0.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0"
+  },
+  "mode": "fresh Python",
+  "execution": {
+    "repo_root": "passed",
+    "labs": "passed",
+    "isolated_remote": "passed"
+  },
+  "notebook_schema": "passed",
+  "notebook_sha256": "11dff07938c5245a289890cf72f51e533cc1b5061af3616b0ac7bbeaa33f1ac3",
+  "extract_sha256": "32b95983cef5b6bbe2d62c08de9d55abc525989dbb371bfc3c47d733ccb661fd",
+  "jupyter_kernel": "not run in this mode",
+  "google_colab_service": "not run; isolated_remote tests no-local-loader HTTP fallback"
+}
